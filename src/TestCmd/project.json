@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+  "description": "Test command line app",
+  "authors": [ "dmetzgar" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Console": "4.0.0-beta-*",
+    "CoreIntro": "1.0.0-*"
+  },
+
+  "commands": {
+    "TestCmd": "TestCmd"
+  },
+
+  "frameworks": {
+    "dnxcore50": { }
+  }
+}
