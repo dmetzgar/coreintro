@@ -142,9 +142,27 @@ And as noted above the `--` convention is not used. For example:
 dnvm install 1.0.0-beta6 -r coreclr -arch x86
 ```
 
+## The "dotnet" moniker
+There is a [blog post](http://blog.nuget.org/20150729/Introducing-nuget-uwp.html) on nuget.org that explains the "dotnet" target moniker in a lot more detail.
+The following table is taken from that post indicating what available monikers there are:
+
+|Description|Base Code|Available versions|
+|:----------|:------- |:-----------------|
+|Managed framework applications (WinForms, Console Applications, WPF, ASP.NET)|net|net11, net20, net35, net35-client, net35-full, net4, net40, net40-client, net40-full, net403, net45, net451, net452, net46| 
+|ASP.NET 5|dnxcore|dnxcore50 
+|Windows Store|netcore|win8 = netcore45, win81 = netcore451, uap10.0| 
+|Windows Phone (appx model)|wpa|wpa81| 
+|Windows Phone (Silverlight)|wp|wp7 = sl3-wp, wp71 = sl4-wp71, sl4-wp, wp8 = wp8-, wp81| 
+|Silverlight|sl|sl2, sl3 = sl30, sl4 = sl40, sl5 = sl50| 
+|Xamarin||mono, MonoMac, Xamarin.Mac, MonoAndroid10, MonoTouch10, Xamarin.iOS10|
+|Compact Framework|net-cf|net20-cf, net35-cf = cf35, net40-cf| 
+|Micro Framework|netmf|netmf41, netmf42, netmf43| 
+
+
 ## References and Recommended Reading
 - Introducing .NET Core: http://blogs.msdn.com/b/dotnet/archive/2014/12/04/introducing-net-core.aspx
 - Targeting .NET Core: http://oren.codes/2015/07/29/targeting-net-core/
 - DNU Utility: https://github.com/aspnet/Home/wiki/DNX-utility
 - Project.json file documentation: https://github.com/aspnet/Home/wiki/Project.json-file
 - Project.json schema: http://json.schemastore.org/project
+- Announcing NuGet 3.1 with Support for Universal Windows Platform: http://blog.nuget.org/20150729/Introducing-nuget-uwp.html
